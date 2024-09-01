@@ -1,6 +1,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { FaSatellite, FaLeaf, FaWater, FaGlobeAmericas } from "react-icons/fa";
+import { Link } from "react-router-dom";
 export default function Differences() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -105,10 +106,18 @@ export default function Differences() {
           </motion.div>
         </div>
         <div className="mt-7 md:w-[600px] w-full mx-auto flex flex-col items-center gap-y-3">
-         <p> Our service offers $44 payment per hectare on monthly basis.
-          Consequently, the overall market value (Central Asia) can be
-          calculated as approximately $44 billion . . .</p>
-          <a href="/subscription" className="bg-10 w-[100px] px-3 py-2  rounded-md text-lg font-medium border-10 border hover:bg-transparent transition-all duration-300">More</a>
+          <p>
+            {" "}
+            Our service offers $44 payment per hectare on monthly basis.
+            Consequently, the overall market value (Central Asia) can be
+            calculated as approximately $44 billion . . .
+          </p>
+          <Link
+            to={"/subscription"}
+            className="bg-10 w-[100px] px-3 py-2  rounded-md text-lg font-medium border-10 border hover:bg-transparent transition-all duration-300"
+          >
+            More
+          </Link>
         </div>
       </div>
     </div>
