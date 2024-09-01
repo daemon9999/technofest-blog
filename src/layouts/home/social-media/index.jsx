@@ -1,4 +1,6 @@
-import { FaInstagram, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { BiLogoGmail } from "react-icons/bi";
+
 import { motion, useInView } from 'framer-motion';
 import  { useRef } from 'react';
 export default function SocialMedia() {
@@ -16,20 +18,21 @@ export default function SocialMedia() {
             Follow Us on Social Media
           </motion.h2>
           <motion.div
-            className="flex justify-center space-x-8 text-4xl"
+            className="flex items-center justify-center space-x-8 text-4xl"
             initial={{ opacity: 0, scale: 0.8 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all " />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
               <FaLinkedin className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all" />
             </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
-              <FaFacebook className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all" />
+            <a href="mailto:suniekinchi@gmail.com" target="_blank" rel="noopener noreferrer">
+              <BiLogoGmail size={40} className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all" />
             </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all " />
+            </a>
+          
           </motion.div>
         </div>
       </div>
