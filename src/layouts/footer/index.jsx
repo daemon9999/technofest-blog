@@ -16,8 +16,8 @@ export default function Footer() {
               className="w-auto sm:w-full h-full"
               alt="Logo Icon"
             />
-            <span className="uppercase font-montserrat text-lg xs:text-2xl tracking-widest font-extrabold gradient-text">
-              agro4help
+            <span className="uppercase font-montserrat whitespace-nowrap text-lg xs:text-2xl tracking-widest font-extrabold gradient-text">
+              suni ekinchi
             </span>
           </button>
 
@@ -33,7 +33,7 @@ export default function Footer() {
         </div>
 
         <div className="text-lg text-400 tracking-wider ml-auto w-full sm:w-auto text-center sm:text-start">
-          &copy;{new Date(Date.now()).getFullYear()} AGRO4HELP, All rights
+          &copy;{new Date(Date.now()).getFullYear()} SUNI EKINCHI, All rights
           reserved.
         </div>
       </div>

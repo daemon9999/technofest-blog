@@ -109,7 +109,7 @@ export default function Differences() {
           <p>
             {" "}
             Our service offers $44 payment per hectare on monthly basis.
-            Consequently, the overall market value (Central Asia) can be
+            Consequently, the overall market value in Central Asia can be
             calculated as approximately $44 billion . . .
           </p>
           <Link

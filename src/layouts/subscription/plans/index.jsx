@@ -22,7 +22,7 @@ export default function Plans() {
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 1, delay: 0.3 }}
         >
-          Our service offers $44 payment per hectare on a monthly basis. Consequently, the overall market value (Central Asia) can be calculated as approximately $44 billion, which can be evaluated as quite large. Coming to added value, test findings for Precision Agriculture show impressive production increases: 20% better yields for wheat, 15% higher yields for maize, and 5% higher yields for soybeans. Interestingly, these improvements come with significant resource savings, with a 10% to 20% reduction in the use of pesticides and fertilizers (I. Vatin et al. 2024). Taking into account that our project consists of software and hardware sections whose needs (satellite data and sensors) for both of them can easily be provided from the marketplace, the project can be evaluated as applicable enough. Also, “Suni Ekinchi BHOS” project contains the usage of IoT with sensors, comprehensive AI algorithms, and various types of satellite imagery. This project can trigger the studies of AI-based pest control systems, crop health diagnostics, and soil health monitoring. Tech companies that provide relevant satellite data or hardware components, and agricultural suppliers can cooperate with us to enhance our system with technological advancements and create integrated solutions for customers. In addition, collaborations with universities and research institutes will foster agricultural science.
+          Our service offers $44 payment per hectare on a monthly basis. Consequently, the overall market value in Central Asia can be calculated as approximately $44 billion, which can be evaluated as quite large. Coming to added value, test findings for Precision Agriculture show impressive production increases: 20% better yields for wheat, 15% higher yields for maize, and 5% higher yields for soybeans. Interestingly, these improvements come with significant resource savings, with a 10% to 20% reduction in the use of pesticides and fertilizers. Taking into account that our project consists of software and hardware sections whose needs (satellite data and sensors) for both of them can easily be provided from the marketplace, the project can be evaluated as applicable enough. Also, “Suni Ekinchi BHOS” project contains the usage of IoT with sensors, comprehensive AI algorithms, and various types of satellite imagery. This project can trigger the studies of AI-based pest control systems, crop health diagnostics, and soil health monitoring. Tech companies that provide relevant satellite data or hardware components, and agricultural suppliers can cooperate with us to enhance our system with technological advancements and create integrated solutions for customers. In addition, collaborations with universities and research institutes will foster agricultural science.
         </motion.p>
 
         <div className="flex flex-col md:flex-row gap-8">
@@ -53,7 +53,7 @@ export default function Plans() {
           >
             <h3 className="text-xl font-bold mb-4 text-500">Basic Plan</h3>
             <p className="mb-4 text-center">No minimum commitment. Pause or cancel anytime</p>
-            <p className="text-2xl font-semibold mb-4 mt-auto">$12 / month</p>
+            <p className="text-2xl font-semibold mb-4 mt-auto">$26 / month</p>
             <ul className="list-disc text-left mb-6">
               <li className="flex items-center"><FaCloud className="mr-2 text-500 flex-shrink-0" /> Everything in Free Plan</li>
               <li className="flex items-center"><FaCloud className="mr-2 text-500 flex-shrink-0" /> Soil moisture, Temperature, Air temperature, Humidity</li>
@@ -71,7 +71,7 @@ export default function Plans() {
           >
             <h3 className="text-xl font-bold mb-4 text-500">Premium Plan</h3>
             <p className="mb-4 text-center">No minimum commitment. Pause or cancel anytime</p>
-            <p className="text-2xl font-semibold mb-4 mt-auto">$30 / month</p>
+            <p className="text-2xl font-semibold mb-4 mt-auto">$44 / month</p>
             <ul className="list-disc text-left mb-6">
               <li className="flex items-center"><FaCloud className="mr-2 text-500 flex-shrink-0" /> Everything in Basic Plan</li>
               <li className="flex items-center"><FaSatelliteDish className="mr-2 text-500 flex-shrink-0" /> Satellite image with 30*30 cm resolution</li>

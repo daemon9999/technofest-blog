@@ -7,7 +7,7 @@ export default function InputGroup({ label, onChange, value, id, name, type }) {
         className={classNames(
           "text-10 absolute top-1/2 -translate-y-1/2 left-4 transition-all duration-300",
           {
-            "-top-1 text-sm": value,
+            "-top-2 text-sm": value,
           }
         )}
       >

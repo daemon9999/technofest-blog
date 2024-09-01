@@ -17,8 +17,8 @@ export default function Header() {
             className="w-full h-full"
             alt="Logo Icon"
           />
-          <span className="uppercase font-montserrat text-lg xs:text-2xl tracking-widest font-extrabold gradient-text">
-            agro4help
+          <span className="uppercase whitespace-nowrap font-montserrat text-lg xs:text-2xl tracking-widest font-extrabold gradient-text">
+            suni ekinchi
           </span>
         </Link>
 
