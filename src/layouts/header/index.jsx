@@ -23,10 +23,10 @@ export default function Header() {
         </Link>
 
         <div className="hidden md:flex  items-center gap-x-4 font-montserrat  font-medium">
-          <a href={"/#about"} className={linkStyle}>
+          <Link to={"/#about"} className={linkStyle}>
             <BsFillInfoCircleFill size={22} /> 
             About Company
-          </a>
+          </Link>
 
  
           <Link to={"/subscription"} className={linkStyle}>

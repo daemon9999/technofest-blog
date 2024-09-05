@@ -1,6 +1,7 @@
 import { useSiteContext } from "~/context";
 import { MdOutlineClose } from "react-icons/md";
 import classNames from "classnames";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const { isOpen, setIsOpen } = useSiteContext();
@@ -12,8 +13,8 @@ export default function Menu() {
             "w-0 invisible": !isOpen
         })}>
           <button type="button" onClick={() => setIsOpen(false)} className="ml-auto"><MdOutlineClose size={40}/></button>
-          <a href="/#about" onClick={() => setIsOpen(false)} className="text-2xl font-semibold tracking-widest">About</a>
-          <a href="/subscription" onClick={() => setIsOpen(false)} className="text-2xl font-semibold tracking-widest">Subscription</a>
+          <Link to={"/#about"} onClick={() => setIsOpen(false)} className="text-2xl font-semibold tracking-widest">About</Link>
+          <Link to={"/subscription"} onClick={() => setIsOpen(false)} className="text-2xl font-semibold tracking-widest">Subscription</Link>
         </div>
         <style jsx>{`
           body {

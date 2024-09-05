@@ -10,8 +10,16 @@ export default function Layout() {
     const location = useLocation()
 
     useEffect(() => {
-        window.scrollTo(0,0)
-    }, [location.pathname])
+      window.scrollTo(0, 0);
+    }, [location.pathname]);
+    useEffect(() => {
+      if (location.hash) {
+        const element = document.getElementById(location.hash.substring(1));
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }
+    }, [location]);
   return (
   <>
         <SiteProvider>

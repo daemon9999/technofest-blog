@@ -3,6 +3,7 @@ import { BiLogoGmail } from "react-icons/bi";
 
 import { motion, useInView } from 'framer-motion';
 import  { useRef } from 'react';
+import { Link } from 'react-router-dom';
 export default function SocialMedia() {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
@@ -23,15 +24,15 @@ export default function SocialMedia() {
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5, delay: 0.2 }}
           >
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            <Link to={`https://www.linkedin.com/in/suniekinchi/`}  target="_blank"  rel="noopener noreferrer">
               <FaLinkedin className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all" />
-            </a>
-            <a href="mailto:suniekinchi@gmail.com" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to={"mailto:suniekinchi@gmail.com"} target="_blank" rel="noopener noreferrer">
               <BiLogoGmail size={40} className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all" />
-            </a>
-            <a href="#" target="_blank" rel="noopener noreferrer">
+            </Link>
+            <Link to={"https://www.instagram.com/suniekinchi/"} target="_blank" rel="noopener noreferrer">
               <FaInstagram className="text-500 hover:text-900  duration-300 hover:scale-[1.3] transition-all " />
-            </a>
+            </Link>
           
           </motion.div>
         </div>

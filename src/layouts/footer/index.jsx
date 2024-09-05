@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 
 export default function Footer() {
-    const {pathname} = useLocation()
   return (
     <footer className="bg-10">
       <div className="w-[90%] container mx-auto flex flex-col items-center sm:items-stretch gap-y-3 py-10">
@@ -22,10 +21,10 @@ export default function Footer() {
           </button>
 
           <div className="flex items-center gap-x-4 text-400 font-bold tracking-wider text-xl">
-            <a href={"/#product"}  className="hover:underline">
+            <Link to={"http://164.92.253.215:3000/farm"} target="_blank"  className="hover:underline">
               Product
-            </a>
-            <Link to={"/about"} className="hover:underline">
+            </Link>
+            <Link to={"/#product"} className="hover:underline">
               Our Company
             </Link>
          
